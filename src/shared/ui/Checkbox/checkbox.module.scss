@@ -1,0 +1,38 @@
+@import '../../../shared/styles/colors.scss';
+@import '../../../shared/styles/typography.scss';
+@import '../../../shared/styles/radius.scss';
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--paragraph-spacing);
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-small);
+  appearance: none;
+  outline: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  
+  &:checked {
+    background-color: var(--bg-accent);
+    border-color: var(--bg-accent);
+  }
+  
+  &:disabled {
+    background-color: var(--bg-disabled);
+    cursor: not-allowed;
+  }
+}
+
+.label {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-p3);
+  color: var(--text-primary);
+}

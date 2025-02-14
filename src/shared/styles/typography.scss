@@ -1,0 +1,35 @@
+:root {
+  /* Police principale (Inter via Google Fonts) */
+  --font-family-primary: 'Inter', sans-serif;
+
+  /* Hiérarchie des Titres */
+  --font-size-h1: 36px;
+  --font-size-h2: 32px;
+  --font-size-h3: 24px;
+  --font-size-h4: 18px;
+  --font-size-h5: 16px;
+
+  /* Paragraphes */
+  --font-size-p1: 24px;
+  --font-size-p2: 18px;
+  --font-size-p3: 16px;
+  --font-size-p4: 16px;
+  --font-size-p5: 14px;
+  --font-size-p6: 14px;
+  --font-size-p7: 12px;
+  --font-size-p8: 12px;
+  --font-size-p9: 10px;
+  --font-size-p10: 10px;
+
+  /* Hauteurs de ligne */
+  --line-height-h1: 1.2;
+  --line-height-h2: 1.2;
+  --line-height-h3: 1.2;
+  --line-height-h4: 1.2;
+  --line-height-h5: 1.2;
+  --line-height-p: 1.2;
+  --line-height-caption: 1.2;
+
+  /* Espacement entre paragraphes */
+  --paragraph-spacing: 8px;
+}

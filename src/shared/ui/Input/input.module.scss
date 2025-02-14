@@ -1,0 +1,68 @@
+@import '../../../shared/styles/colors.scss';
+@import '../../../shared/styles/typography.scss';
+@import '../../../shared/styles/radius.scss';
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--paragraph-spacing);
+}
+
+.label {
+  font-family: var(--font-family-primary);
+  margin-bottom: 4px;
+  font-size: var(--font-size-p3);
+  color: var(--text-primary);
+}
+
+.input {
+  font-family: var(--font-family-primary);
+  padding: 8px 12px;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-input);
+  transition: border-color 0.3s ease;
+  font-size: var(--font-size-p3);
+  line-height: var(--line-height-p);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+
+  &:hover {
+    border-color: var(--border-focus);
+  }
+
+  &:focus {
+    border-color: var(--border-focus);
+    outline: none;
+  }
+  
+  &.error, &.error:focus {
+    border-color: var(--bg-critical);
+  }
+}
+
+/* Variantes de taille */
+.large {
+  font-size: var(--font-size-p1);
+  padding: 12px 16px;
+}
+
+.medium {
+  font-size: var(--font-size-p2);
+  padding: 10px 14px;
+}
+
+.small {
+  font-size: var(--font-size-p3);
+  padding: 8px 12px;
+}
+
+.xs {
+  font-size: var(--font-size-p4);
+  padding: 6px 10px;
+}
+
+.helperText {
+  font-size: var(--font-size-p7);
+  color: var(--text-secondary);
+  margin-top: 4px;
+}

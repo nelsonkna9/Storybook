@@ -1,0 +1,49 @@
+@import '../../../shared/styles/colors.scss';
+@import '../../../shared/styles/typography.scss';
+@import '../../../shared/styles/radius.scss';
+
+.button {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-p5);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: var(--radius-button);
+  padding: 12px 24px;
+  background-color: var(--bg-accent);
+  color: var(--white-main);
+
+  &:hover {
+    background-color: var(--bg-accent-hover);
+  }
+  
+  &:active {
+    background-color: var(--bg-accent-active);
+  }
+  
+  &:disabled {
+    background-color: var(--bg-disabled);
+    cursor: not-allowed;
+  }
+}
+
+/* Variantes de taille */
+.large {
+  font-size: var(--font-size-h5);
+  padding: 16px 32px;
+}
+
+.medium {
+  font-size: var(--font-size-p5);
+  padding: 12px 24px;
+}
+
+.small {
+  font-size: var(--font-size-p7);
+  padding: 8px 16px;
+}
+
+.xs {
+  font-size: var(--font-size-p9);
+  padding: 4px 8px;
+}

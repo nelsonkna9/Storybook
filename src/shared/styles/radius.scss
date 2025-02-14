@@ -1,0 +1,15 @@
+:root {
+    /* Rayon de base (responsive en fonction de la largeur d’écran) */
+    --radius-default: 8px;  /* 1920px et 1440px */
+    --radius-medium: 6px;   /* 1024px */
+    --radius-small: 4px;    /* 768px et 320px */
+  
+    /* Composants */
+    --radius-button: var(--radius-default);
+    --radius-card: var(--radius-default);
+    --radius-input: var(--radius-default);
+    --radius-dropdown: var(--radius-default);
+    --radius-fileupload: var(--radius-default);
+    --radius-segment-control: var(--radius-default);
+  }
+  
