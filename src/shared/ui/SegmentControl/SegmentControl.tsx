@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './segmentControl.module.scss';
 
-export type SegmentControlProps = {
+export interface SegmentControlProps {
   label?: string;
   options: string[];
   selected: string;
   onSelect: (option: string) => void;
   variant?: 'master' | 'clear';
   size?: 'large' | 'medium' | 'small' | 'xs';
-};
+}
 
 export const SegmentControl: React.FC<SegmentControlProps> = ({
   label,
@@ -16,7 +16,7 @@ export const SegmentControl: React.FC<SegmentControlProps> = ({
   selected,
   onSelect,
   variant = 'master',
-  size = 'medium'
+  size = 'medium',
 }) => {
   return (
     <div className={styles.segmentControlWrapper}>

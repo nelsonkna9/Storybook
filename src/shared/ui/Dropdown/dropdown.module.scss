@@ -9,9 +9,9 @@
 
 .label {
   font-family: var(--font-family-primary);
-  margin-bottom: 4px;
   font-size: var(--font-size-p3);
   color: var(--text-primary);
+  margin-bottom: 4px;
 }
 
 .dropdown {
@@ -23,15 +23,19 @@
   font-size: var(--font-size-p3);
   cursor: pointer;
   transition: border-color 0.3s ease;
-  
-  &:hover {
-    border-color: var(--border-focus);
-  }
-  
-  &.disabled {
-    background-color: var(--bg-disabled);
-    cursor: not-allowed;
-  }
+}
+
+.dropdown:hover:not(.disabled) {
+  border-color: var(--border-focus);
+}
+
+.dropdown.disabled {
+  background-color: var(--bg-disabled);
+  cursor: not-allowed;
+}
+
+.dropdown.error {
+  border-color: var(--bg-critical);
 }
 
 .options {

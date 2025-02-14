@@ -1,34 +1,25 @@
 import React from 'react';
 import styles from './checkbox.module.scss';
 
-export type CheckboxProps = {
+export interface CheckboxProps {
   label: string;
   checked: boolean;
-  indeterminate?: boolean;
   disabled?: boolean;
   onChange: (checked: boolean) => void;
-};
+}
 
-export const Checkbox: React.FC<CheckboxProps> = ({ label, checked, indeterminate = false, disabled = false, onChange }) => {
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    onChange(e.target.checked);
-  };
-
+export const Checkbox: React.FC<CheckboxProps> = ({ label, checked, disabled = false, onChange }) => {
   return (
-    <div className={styles.checkboxWrapper}>
+    <label className={styles.checkboxLabel}>
       <input
         type="checkbox"
-        className={styles.checkbox}
         checked={checked}
         disabled={disabled}
-        onChange={handleChange}
-        ref={(input) => {
-          if (input) {
-            input.indeterminate = indeterminate;
-          }
-        }}
+        onChange={(e) => onChange(e.target.checked)}
+        className={styles.checkboxInput}
       />
-      <label className={styles.label}>{label}</label>
-    </div>
+      <span className={styles.checkboxCustom}></span>
+      <span className={styles.checkboxText}>{label}</span>
+    </label>
   );
 };

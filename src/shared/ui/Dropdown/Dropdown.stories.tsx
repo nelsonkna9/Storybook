@@ -14,9 +14,9 @@ const Template: Story<DropdownProps> = (args) => {
 
 export const Default = Template.bind({});
 Default.args = {
-  label: 'Large Dropdown',
+  label: 'Master Dropdown',
   helperText: 'This is a helper text',
-  options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
+  options: ['First option', 'Second option', 'Third option', 'Fourth option'],
 };
 
 export const Disabled = Template.bind({});
@@ -25,4 +25,12 @@ Disabled.args = {
   helperText: 'This is a helper text',
   options: ['Option 1', 'Option 2'],
   disabled: true,
+};
+
+export const ErrorState = Template.bind({});
+ErrorState.args = {
+  label: 'Dropdown with Error',
+  helperText: 'This is a helper text',
+  options: ['Option 1', 'Option 2'],
+  error: true,
 };

@@ -1,25 +1,30 @@
 import React, { useRef, useState } from 'react';
 import styles from './fileUpload.module.scss';
 
-export type FileUploadProps = {
+export interface FileUploadProps {
   label?: string;
   helperText?: string;
   disabled?: boolean;
+  error?: boolean;
   onFileSelect?: (file: File) => void;
-};
+}
 
-export const FileUpload: React.FC<FileUploadProps> = ({ label, helperText, disabled = false, onFileSelect }) => {
+export const FileUpload: React.FC<FileUploadProps> = ({
+  label,
+  helperText,
+  disabled = false,
+  error = false,
+  onFileSelect,
+}) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [uploadedFile, setUploadedFile] = useState<File | null>(null);
-  const [error, setError] = useState('');
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files ? e.target.files[0] : null;
     if (file) {
       setUploadedFile(file);
       if (onFileSelect) onFileSelect(file);
-      // Simuler la progression de l'upload
       setUploadProgress(0);
       const interval = setInterval(() => {
         setUploadProgress((prev) => {
@@ -64,7 +69,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({ label, helperText, disab
             </div>
           </div>
         ) : (
-          <span>Перетащите файл сюда или</span>
+          <span>Drag and drop a file here or click to select</span>
         )}
       </div>
       <input type="file" ref={fileInputRef} className={styles.hiddenInput} onChange={handleFileChange} disabled={disabled} />

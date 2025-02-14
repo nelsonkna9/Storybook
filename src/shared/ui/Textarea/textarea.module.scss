@@ -2,7 +2,7 @@
 @import '../../../shared/styles/typography.scss';
 @import '../../../shared/styles/radius.scss';
 
-.inputWrapper {
+.textareaWrapper {
   margin-bottom: var(--paragraph-spacing);
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@
   margin-bottom: 4px;
 }
 
-.input {
+.textarea {
   padding: 8px 12px;
   border: 1px solid var(--border-primary);
   border-radius: var(--radius-input);
@@ -24,18 +24,19 @@
   font-size: var(--font-size-p3);
   color: var(--text-primary);
   background-color: var(--bg-primary);
+  resize: vertical;
 }
 
-.input:hover:not(:disabled) {
+.textarea:hover:not(:disabled) {
   border-color: var(--border-focus);
 }
 
-.input:focus {
+.textarea:focus {
   border-color: var(--border-focus);
   outline: none;
 }
 
-.input.error {
+.textarea.error {
   border-color: var(--bg-critical);
 }
 

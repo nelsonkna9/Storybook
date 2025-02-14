@@ -8,9 +8,9 @@
 
 .label {
   font-family: var(--font-family-primary);
-  margin-bottom: 4px;
   font-size: var(--font-size-p3);
   color: var(--text-primary);
+  margin-bottom: 4px;
 }
 
 .segmentControl {
@@ -18,52 +18,46 @@
   border: 1px solid var(--border-primary);
   border-radius: var(--radius-dropdown);
   overflow: hidden;
-  
-  .segmentOption {
-    flex: 1;
-    padding: 8px 12px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: var(--font-family-primary);
-    font-size: var(--font-size-p3);
-    color: var(--text-primary);
-    
-    &:hover {
-      background-color: var(--bg-secondary-hover);
-    }
-  }
+  transition: background-color 0.3s ease;
 }
 
-/* Variant Master */
-.master .segmentOption.active {
+.segmentOption {
+  flex: 1;
+  padding: 8px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-p3);
+  color: var(--text-primary);
+}
+
+.segmentOption:hover {
+  background-color: var(--bg-secondary-hover);
+}
+
+.segmentOption.active {
   background-color: var(--bg-accent);
   color: var(--white-main);
 }
 
-/* Variant Clear */
-.clear .segmentOption.active {
-  background-color: transparent;
-  border-bottom: 2px solid var(--bg-accent);
-}
-
 /* Variantes de taille */
-.large .segmentOption {
-  padding: 12px 16px;
+.large {
   font-size: var(--font-size-h5);
+  padding: 12px 16px;
 }
 
-.medium .segmentOption {
-  padding: 10px 14px;
+.medium {
   font-size: var(--font-size-p3);
+  padding: 10px 14px;
 }
 
-.small .segmentOption {
-  padding: 8px 12px;
+.small {
   font-size: var(--font-size-p7);
+  padding: 8px 12px;
 }
 
-.xs .segmentOption {
-  padding: 6px 10px;
+.xs {
   font-size: var(--font-size-p9);
+  padding: 6px 10px;
 }

@@ -10,9 +10,9 @@
 
 .label {
   font-family: var(--font-family-primary);
-  margin-bottom: 4px;
   font-size: var(--font-size-p3);
   color: var(--text-primary);
+  margin-bottom: 4px;
 }
 
 .dropzone {
@@ -23,19 +23,19 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   background-color: var(--bg-secondary);
+}
 
-  &:hover {
-    background-color: var(--bg-secondary-hover);
-  }
+.dropzone:hover {
+  background-color: var(--bg-secondary-hover);
+}
 
-  &.disabled {
-    background-color: var(--bg-disabled);
-    cursor: not-allowed;
-  }
+.dropzone.disabled {
+  background-color: var(--bg-disabled);
+  cursor: not-allowed;
+}
 
-  &.error {
-    border-color: var(--bg-critical);
-  }
+.dropzone.error {
+  border-color: var(--bg-critical);
 }
 
 .hiddenInput {

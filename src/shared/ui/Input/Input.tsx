@@ -1,13 +1,11 @@
 import React, { InputHTMLAttributes } from 'react';
 import styles from './input.module.scss';
 
-export type InputSize = 'large' | 'medium' | 'small' | 'xs';
-
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   helperText?: string;
   error?: boolean;
-  size?: InputSize;
+  size?: 'large' | 'medium' | 'small';
 }
 
 export const Input: React.FC<InputProps> = ({ label, helperText, error = false, size = 'medium', ...props }) => {

@@ -21,3 +21,10 @@ Disabled.args = {
   helperText: 'This is a helper text',
   disabled: true,
 };
+
+export const ErrorState = Template.bind({});
+ErrorState.args = {
+  label: 'File Upload 3.32 mb',
+  helperText: 'This is a helper text',
+  error: true,
+};

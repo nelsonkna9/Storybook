@@ -14,8 +14,8 @@ const Template: Story<SegmentControlProps> = (args) => {
 
 export const MasterVariant = Template.bind({});
 MasterVariant.args = {
-  label: 'Master Segment Control',
-  options: ['Option 1', 'Option 2', 'Option 3'],
+  label: 'Master Segmented Control',
+  options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
   selected: 'Option 1',
   variant: 'master',
   size: 'medium',
@@ -23,7 +23,7 @@ MasterVariant.args = {
 
 export const ClearVariant = Template.bind({});
 ClearVariant.args = {
-  label: 'Clear Segment Control',
+  label: 'Clear Segmented Control',
   options: ['Option 1', 'Option 2', 'Option 3'],
   selected: 'Option 2',
   variant: 'clear',

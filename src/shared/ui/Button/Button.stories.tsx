@@ -9,33 +9,75 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const Large = Template.bind({});
-Large.args = {
+export const LargeRectangular = Template.bind({});
+LargeRectangular.args = {
   label: 'Large Button',
   size: 'large',
+  shape: 'rectangular',
+  colorVariant: 'violet',
 };
 
-export const Medium = Template.bind({});
-Medium.args = {
+export const LargeCircular = Template.bind({});
+LargeCircular.args = {
+  label: 'Large Button',
+  size: 'large',
+  shape: 'circular',
+  colorVariant: 'violet',
+};
+
+export const MediumRectangular = Template.bind({});
+MediumRectangular.args = {
   label: 'Medium Button',
   size: 'medium',
+  shape: 'rectangular',
+  colorVariant: 'violet',
 };
 
-export const Small = Template.bind({});
-Small.args = {
+export const MediumCircular = Template.bind({});
+MediumCircular.args = {
+  label: 'Medium Button',
+  size: 'medium',
+  shape: 'circular',
+  colorVariant: 'violet',
+};
+
+export const SmallRectangular = Template.bind({});
+SmallRectangular.args = {
   label: 'Small Button',
   size: 'small',
+  shape: 'rectangular',
+  colorVariant: 'violet',
 };
 
-export const XS = Template.bind({});
-XS.args = {
+export const SmallCircular = Template.bind({});
+SmallCircular.args = {
+  label: 'Small Button',
+  size: 'small',
+  shape: 'circular',
+  colorVariant: 'violet',
+};
+
+export const XSRectangular = Template.bind({});
+XSRectangular.args = {
   label: 'XS Button',
   size: 'xs',
+  shape: 'rectangular',
+  colorVariant: 'violet',
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  label: 'Disabled Button',
+export const XSCircular = Template.bind({});
+XSCircular.args = {
+  label: 'XS Button',
+  size: 'xs',
+  shape: 'circular',
+  colorVariant: 'violet',
+};
+
+export const DisabledButton = Template.bind({});
+DisabledButton.args = {
+  label: 'Disabled',
   size: 'medium',
+  shape: 'rectangular',
+  colorVariant: 'gray',
   disabled: true,
 };

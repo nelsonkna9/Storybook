@@ -2,48 +2,103 @@
 @import '../../../shared/styles/typography.scss';
 @import '../../../shared/styles/radius.scss';
 
+/* Style de base */
 .button {
   font-family: var(--font-family-primary);
-  font-size: var(--font-size-p5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  border-radius: var(--radius-button);
-  padding: 12px 24px;
-  background-color: var(--bg-accent);
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Large Button */
+.largeRect {
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 8px;
+}
+.largeCirc {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+/* Medium Button */
+.mediumRect {
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 8px;
+}
+.mediumCirc {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Small Button */
+.smallRect {
+  height: 32px;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+.smallCirc {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* XS Button */
+.xsRect {
+  height: 24px;
+  padding: 0 12px;
+  border-radius: 4px;
+}
+.xsCirc {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+/* Variantes de couleur */
+.violet {
+  background-color: var(--purple-main);
   color: var(--white-main);
-
-  &:hover {
-    background-color: var(--bg-accent-hover);
-  }
-  
-  &:active {
-    background-color: var(--bg-accent-active);
-  }
-  
-  &:disabled {
-    background-color: var(--bg-disabled);
-    cursor: not-allowed;
-  }
+}
+.violet:hover:not(:disabled) {
+  background-color: var(--purple-800);
+}
+.violet:active:not(:disabled) {
+  background-color: var(--purple-700);
 }
 
-/* Variantes de taille */
-.large {
-  font-size: var(--font-size-h5);
-  padding: 16px 32px;
+.red {
+  background-color: var(--red-main);
+  color: var(--white-main);
+}
+.red:hover:not(:disabled) {
+  background-color: var(--red-800);
+}
+.red:active:not(:disabled) {
+  background-color: var(--red-700);
 }
 
-.medium {
-  font-size: var(--font-size-p5);
-  padding: 12px 24px;
+.gray {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+.gray:hover:not(:disabled) {
+  background-color: var(--bg-secondary-hover);
+}
+.gray:active:not(:disabled) {
+  background-color: var(--bg-secondary-active);
 }
 
-.small {
-  font-size: var(--font-size-p7);
-  padding: 8px 16px;
-}
-
-.xs {
-  font-size: var(--font-size-p9);
-  padding: 4px 8px;
+/* État Disabled */
+.disabled {
+  background-color: var(--bg-disabled) !important;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
