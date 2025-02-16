@@ -37,7 +37,6 @@ Visit [http://localhost:6006](http://localhost:6006) to view and interact with t
 - **HTML5**
 - **CSS3**
 - **TypeScript**
-- **React**
 - **Next.js**
 - **SCSS (CSS Modules)**
 - **Storybook**
