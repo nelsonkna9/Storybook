@@ -12,12 +12,12 @@ To work with this project, you will need **Node.js version 21.x** or higher.
 
 ### 1. Clone the repository:
 ```bash
-git clone -b 1-week https://github.com/egoloprum/ui-kit-storybook.git
+git clone -b 1-week https://github.com/nelsonkna9/Storybook.git
 ```
 
 ### 2. Navigate to the project directory:
 ```bash
-cd ui-kit-storybook
+cd my-ui-kit
 ```
 
 ### 3. Install dependencies:
