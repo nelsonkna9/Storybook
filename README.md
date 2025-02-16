@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UI-kit Storybook
+
+## Project Description
+This project is a UI-kit built for frontend development using **Next.js** and **TypeScript**. It contains a comprehensive collection of reusable UI components—such as **Buttons, Inputs, Dropdowns, Radio Buttons, Checkboxes, Toggles, Segment Controls, and File Uploads**—all styled according to our design system (colors, typography, radius) and organized following **Feature-Sliced Design** principles. 
+
+**Storybook** is integrated to provide interactive documentation and testing for each component, ensuring consistency and ease of maintenance.
+
+## Node Version
+To work with this project, you will need **Node.js version 21.x** or higher.
 
 ## Getting Started
 
-First, run the development server:
-
+### 1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone -b 1-week https://github.com/egoloprum/ui-kit-storybook.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Navigate to the project directory:
+```bash
+cd ui-kit-storybook
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Install dependencies:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run Storybook:
+```bash
+npm run storybook
+```
 
-## Learn More
+### 5. Open Storybook in your browser:
+Visit [http://localhost:6006](http://localhost:6006) to view and interact with the components.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technology Stack
+- **HTML5**
+- **CSS3**
+- **TypeScript**
+- **React**
+- **Next.js**
+- **SCSS (CSS Modules)**
+- **Storybook**
